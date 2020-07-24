@@ -1,0 +1,6 @@
+server:
+  port: 8877
+
+spring:
+  application:
+    name: security-oauth2
