@@ -1,9 +1,9 @@
 server:
-  port: 8877
+  port: 8866
 
 spring:
   application:
-    name: AuthorizationServer
+    name: resourceServer
   redis:
     host: 192.168.111.129
     port: 6379
@@ -14,3 +14,9 @@ spring:
         min-idle: 2 # 连接池中的最小空闲连接 默认 0
         max-wait: 10000 # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
     timeout: 30000  #连接超时时间(毫秒)
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testbase?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
